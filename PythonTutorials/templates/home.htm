@@ -1,0 +1,48 @@
+{% extends 'basic.htm'%}
+{%load static%}
+{% block title %}Python Tutorials - by Jitendra soni{% endblock title%}
+{% block content %}
+<div class="container">
+    <div class="heading">Python Programming Language</div>
+    <p class="description">Python is a high-level, general-purpose and a very popular programming language. Python
+        programming language (latest Python 3) is being used in web development, Machine Learning applications, along
+        with all cutting edge technology in Software Industry. Python Programming Language is very well suited for
+        Beginners, also for experienced programmers with other programming languages like C++ and Java.</p>
+        <img src="{% static 'mysite/images/Python-Programming-Language.png' %}" class="pythonImage" alt="home"/>
+
+    <p>This specially designed Python tutorial will help you learn Python Programming Language in most efficient way, with the topics from basics to advanced (like Web-scraping, Django, Deep-Learning, etc.) with examples.</p>
+    <div>
+        Below are some facts about Python Programming Language:
+        <ol class="facts-list">
+            <li>Python is currently the most widely used multi-purpose, high-level programming language.</li>
+            <li>Python allows programming in Object-Oriented and Procedural paradigms.</li>
+            <li>Python programs generally are smaller than other programming languages like Java. Programmers have to type relatively less and indentation requirement of the language, makes them readable all the time.</li>
+            <li>Python language is being used by almost all tech-giant companies like – Google, Amazon, Facebook, Instagram, Dropbox, Uber… etc.</li>
+            <li>The biggest strength of Python is huge collection of standard library which can be used for the following:
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>GUI Applications (like Kivy, Tkinter, PyQt etc. )
+                    </li>
+                    <li>Web frameworks like Django (used by YouTube, Instagram, Dropbox)</li>
+                    <li>Image processing (like OpenCV, Pillow)</li>
+                    <li>Web scraping (like Scrapy, BeautifulSoup, Selenium)</li>
+                    <li>Test frameworks</li>
+                    <li>Multimedia</li>
+                    <li>Scientific computing</li>
+                    <li>Text processing and many more.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+
+{% endblock content%}
+{% block pageNavigator%}
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="/">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="/pythonLanguageIntro">Next</a></li>
+    </ul>
+  </nav>
+
+{% endblock pageNavigator%}

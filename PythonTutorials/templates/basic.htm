@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+                crossorigin="anonymous">
+
+        <title>{% block title%}{% endblock title%}</title>
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'mysite/css/style.css'%}">
+        {% block extra_head %}{% endblock %}
+</head>
+
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Python Tutorials - By Jitendra Soni</a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="/onlinecompiler">Online Compiler</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="/About">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#">Contact Us</a>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+        </nav>
+        {% block nav2%}
+        <nav class="navbar navbar-light bg-light navbar2">
+                <div class="container-fluid">
+                        <div class="hamburgur" onclick="show('sideBar')">
+                                <span class="navbar-toggler-icon"></span>
+                        </div>
+                </div>
+        </nav>
+        {% endblock %}
+        {% block sideBar %}
+        <div class="sideBar" id="sideBar">
+                <div class="sideBar_inner" id="scrollBar">
+                        <div class="sidebar-head">
+                                Table of Contents
+                        </div>
+                        <ul class="leftBarList">
+                                <div class="leftbar-dropdown">
+                                        <div class="dropdown-title" id="dropdown-title" onclick="show('sideBarItem1')">
+                                                Introduction
+                                        </div>
+                                        <ul class="sideBarItem" id="sideBarItem1">
+                                                <li><a href="/">Python
+                                                                Programming Language</a></li>
+                                                <li><a href="/pythonLanguageIntro">Python
+                                                                Language Introduction</a></li>
+                                                <li><a href="/PythonAdv">Python
+                                                                Language advantages and applications</a></li>
+                                                <li><a href="/downloadAndInstall">Download
+                                                                and Install Python 3 Latest Version</a></li>
+                                                <li><a href="#">Python 3 basics</a></li>
+                                                <li><a href="#">Python Keywords</a></li>
+                                                <li><a href="#">Namespaces
+                                                                and Scope in Python</a></li>
+                                                <li><a href="#">Statement,
+                                                                Indentation and Comment in Python</a></li>
+                                                <li><a href="#">How
+                                                                to assign values to variables in Python and other
+                                                                languages</a></li>
+                                        </ul>
+                                </div>
+                                <div class="leftbar-dropdown">
+                                        <div class="dropdown-title" id="dropdown-title" onclick="show('sideBarItem2')">
+                                                Input/Output
+                                        </div>
+                                        <ul class="sideBarItem" id="sideBarItem2">
+                                                <li><a href="#">Taking input in
+                                                                Python</a></li>
+                                                <li><a href="#">Taking
+                                                                input from console in Python</a></li>
+                                                <li><a href="#">Taking
+                                                                multiple inputs from user in Python</a></li>
+                                                <li><a href="#">Python |
+                                                                Output using print() function</a></li>
+                                                <li><a href="#">How to print
+                                                                without newline in Python?</a></li>
+                                                <li><a href="#">Python
+                                                                end parameter in print()</a></li>
+                                                <li><a href="#">Python | sep
+                                                                parameter in print()</a></li>
+                                                <li><a href="#">Python | Output
+                                                                Formatting</a></li>
+                                        </ul>
+                                </div>
+                                <div class="leftbar-dropdown">
+                                        <div class="dropdown-title" id="dropdown-title" onclick="show('sideBarItem3')">
+                                                Operators</div>
+                                        <ul class="sideBarItem" id="sideBarItem3">
+                                                <li><a href="#">Python Operators</a></li>
+                                                <li><a href="#">Ternary Operator
+                                                                in Python</a></li>
+                                                <li><a href="#">Division
+                                                                Operators in Python</a></li>
+                                                <li><a href="#">Operator
+                                                                Overloading in Python</a></li>
+                                                <li><a href="#">Any All in Python</a>
+                                                </li>
+                                                <li><a href="#">Operator
+                                                                Functions in Python | Set 1</a></li>
+                                                <li><a href="#">Operator
+                                                                Functions in Python | Set 2</a></li>
+                                                <li><a href="#">Difference
+                                                                between == and is operator in Python</a></li>
+                                                <li><a href="#">Python
+                                                                Membership and Identity Operators</a></li>
+                                        </ul>
+                                </div>
+                                <div class="leftbar-dropdown">
+                                        <div class="dropdown-title" id="dropdown-title" onclick="show('sideBarItem4')">
+                                                Data Types</i></div>
+                                        <ul class="sideBarItem" id="sideBarItem4">
+                                                <li><a href="#">Python
+                                                                | Set 3 (Strings, Lists, Tuples, Iterations)</a></li>
+                                                <li><a href="#">Python String</a></li>
+                                                <li><a href="#">Python Lists</a></li>
+                                                <li><a href="#">Python Tuples</a></li>
+                                                <li><a href="#">Python Sets</a></li>
+                                                <li><a href="#">Python Dictionary</a>
+                                                </li>
+                                                <li><a href="#">Python Arrays</a></li>
+                                        </ul>
+                                </div>
+                                <div class="leftbar-dropdown">
+                                        <div class="dropdown-title" id="dropdown-title" onclick="show('sideBarItem5')">
+                                                Control
+                                                Flow</i></span>
+                                        </div>
+                                        <ul class="sideBarItem" id="sideBarItem5">
+                                                <li><a href="#">Python if else</a></li>
+                                                <li><a href="#">Chaining
+                                                                comparison operators in Python</a></li>
+                                                <li><a href="#">Python For Loops</a></li>
+                                                <li><a href="#">Python While Loop</a>
+                                                </li>
+                                                <li><a href="#">Python break
+                                                                statement</a></li>
+                                                <li><a href="#">Python Continue
+                                                                Statement</a></li>
+                                                <li><a href="#">Python pass
+                                                                Statement</a></li>
+                                                <li><a href="">Looping Techniques in Python</a></li>
+                                        </ul>
+                                </div>
+                                <div class="leftbar-dropdown">
+                                        <div class="dropdown-title" id="dropdown-title" onclick="show('sideBarItem6')">
+                                                Functions</i></span>
+                                        </div>
+                                        <ul class="sideBarItem" id="sideBarItem6">
+                                                <li><a href="#">Python Functions</a></li>
+                                                <li><a href="#">*args and **kwargs in
+                                                                Python</a></li>
+                                                <li><a href="#">When
+                                                                to use yield instead of return in Python?</a></li>
+                                                <li><a href="#">Generators in
+                                                                Python</a></li>
+                                                <li><a href="#">Python lambda</a></li>
+                                                <li><a href="#">Global and
+                                                                Local Variables in Python</a></li>
+                                                <li><a href="#">Global keyword in
+                                                                Python</a></li>
+                                                <li><a href="#">First Class
+                                                                functions in Python</a></li>
+                                                <li><a href="#">Python Closures</a></li>
+                                                <li><a href="#">Decorators in
+                                                                Python</a></li>
+                                                <li><a href="#">Decorators
+                                                                with parameters in Python</a></li>
+                                                <li><a href="#">Memoization
+                                                                using decorators in Python</a></li>
+                                        </ul>
+                                </div>
+                                <div class="leftbar-dropdown">
+                                        <div class="dropdown-title" id="dropdown-title" onclick="show('sideBarItem7')">
+                                                Python OOP</span>
+                                        </div>
+                                        <ul class="sideBarItem" id="sideBarItem7">
+                                                <li><a href="#">Python Classes
+                                                                and Objects</a></li>
+                                                <li><a href="#">Constructors in
+                                                                Python</a></li>
+                                                <li><a href="#">Destructors in
+                                                                Python</a></li>
+                                                <li><a href="#">Inheritance in
+                                                                Python</a></li>
+                                                <li><a href="#">Types of
+                                                                inheritance Python</a></li>
+                                                <li><a href="#">Encapsulation in
+                                                                Python</a></li>
+                                                <li><a href="#">Polymorphism in
+                                                                Python</a></li>
+                                                <li><a href="#">Class
+                                                                or Static Variables in Python</a></li>
+                                                <li><a href="#">Class
+                                                                method vs Static method in Python</a></li>
+                                        </ul>
+                                </div>
+                                <div class="leftbar-dropdown">
+                                        <div class="dropdown-title" id="dropdown-title" onclick="show('sideBarItem8')">
+                                                Exception Handling
+                                        </div>
+                                        <ul class="sideBarItem" id="sideBarItem8">
+                                                <li><a href="#">Python Exception
+                                                                Handling</a></li>
+                                                <li><a href="#">Python Try Except</a>
+                                                </li>
+                                                <li><a href="#">Errors and
+                                                                Exceptions in Python</a></li>
+                                                <li><a href="#">Built-in Exceptions
+                                                                in Python</a></li>
+                                                <li><a href="#">User-defined
+                                                                Exceptions in Python with Examples</a></li>
+                                                <li><a href="#">NZEC error in Python</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="leftbar-dropdown">
+                                        <div class="dropdown-title" id="dropdown-title" onclick="show('sideBarItem9')">
+                                                File handling
+                                        </div>
+                                        <ul class="sideBarItem" id="sideBarItem9">
+                                                <li><a href="#">File Handling in
+                                                                Python</a></li>
+                                                <li><a href="#">Open a File in
+                                                                Python</a></li>
+                                                <li><a href="#">How to
+                                                                read from a file in Python</a></li>
+                                                <li><a href="#">Writing to file
+                                                                in Python</a></li>
+                                                <li><a href="#">Python append to a
+                                                                file</a></li>
+                                        </ul>
+                                </div>
+
+                        </ul>
+                </div>
+        </div>
+        {% endblock sideBar%}
+        <div class="content-area">
+                {% block content %}{% endblock content%}
+        </div>
+        <div class="pageNavigator">
+
+                {% block pageNavigator%}{% endblock pageNavigator%}
+
+        </div>
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+        <script type="text/javascript">
+
+                $('.sideBarItem li a').on('click', function () {
+                        $('.sideBarItem li a').removeClass('active');
+                        $(this).addClass('active');
+                });
+
+                function show(id) {
+                        now = document.getElementById(id).style.display
+                        if (document.getElementById(id).style.display == 'block') {
+                                document.getElementById(id).style.display = 'none';
+
+                        }
+                        else {
+                                document.getElementById(id).style.display = 'block';
+                        }
+                }
+                function toggle(id) {
+                        //document.getElementById(id).disabled = false;
+                        if (document.getElementById(id).disabled == false) {
+                                document.getElementById(id).disabled = true;
+
+                        }
+                        else {
+                                document.getElementById(id).disabled = false;
+                        }
+                }
+                
+
+
+
+//
+        </script>
+        <!-- Optional JavaScript; choose one of the two! -->
+        <script src="https://kit.fontawesome.com/1d9a350409.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

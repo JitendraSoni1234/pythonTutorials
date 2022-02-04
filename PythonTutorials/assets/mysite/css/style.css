@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        
+}
+
+#scrollBar {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 323px;
+        height: 580px;
+        overflow: hidden;
+        overflow-y: scroll;
+}
+
+#scrollBar::-webkit-scrollbar {
+        width: 5px;
+}
+
+#scrollBar::-webkit-scrollbar-track {
+        background: #CFD8DC;
+
+}
+
+#scrollBar::-webkit-scrollbar-thumb {
+        background: #90A4AE;
+        border-radius: 6px;
+        border: 10px soild #CFD8DC;
+}
+::-webkit-scrollbar {
+        width: 5px;
+}
+
+::-webkit-scrollbar-track {
+        background: #CFD8DC;
+
+}
+
+::-webkit-scrollbar-thumb {
+        background: #90A4AE;
+        border-radius: 6px;
+        border: 10px soild #CFD8DC;
+}
+
+.sideBar {
+
+        position: fixed;
+        left: 0;
+        display: none;
+        top: 100px;
+        width: 323px;
+        background: #F8F9FA;
+        height: 100%;
+        opacity: 100%;
+        float: inline-end;
+        z-index: 10;
+}
+
+.sidebar-head {
+        position: relative;
+        margin-left: 20px;
+        top: 0px;
+        background: #F8F9FA;
+        padding: 10px 10px 10px 10px;
+        opacity: 100%;
+        z-index: 10;
+        font-size: 30px;
+}
+
+.leftbar-dropdown .dropdown-title {
+        display: flex;
+
+}
+
+
+
+#sideBarItem1,
+#sideBarItem2,
+#sideBarItem3,
+#sideBarItem4,
+#sideBarItem5,
+#sideBarItem6,
+#sideBarItem7,
+#sideBarItem8,
+#sideBarItem9 {
+        display: none;
+}
+
+.sideBarItem li a {
+        color: black;
+        text-align: center;
+}
+
+.sideBarItem li a:hover {
+        color: green;
+}
+
+
+.leftBarList .active {
+        color: green;
+}
+
+.leftBarList {
+        position: relative;
+        top: 10px;
+}
+
+.dropdown-title {
+        cursor: pointer;
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+        width: 200px;
+}
+
+.leftBarList ul li {
+        list-style: none;
+        margin: 12px 30px 11px 0px;
+}
+
+.leftBarList ul li a {
+        text-decoration: none;
+}
+
+.hamburgur {
+        cursor: pointer;
+        display: block;
+        border: 1px solid rgb(189, 189, 189);
+        border-radius: 6px;
+        padding: 6px 15px;
+}
+
+
+.navbar2 {
+        position: fixed;
+        display: block;
+        top: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    box-shadow: 0 8px 6px -6px #999;        
+}
+
+@media screen and (max-width:1122px) {
+
+
+        .navbar-brand {
+                font-size: 18px;
+        }
+
+        .content-container {
+                position: relative;
+                top: 80px;
+                left: 35px;
+                width: 658px;
+                overflow-x: hidden;
+        }
+
+}
+
+.content-area {
+
+        position: relative;
+        top: 130px;
+        left: 80px;        
+        padding-bottom: 100px;
+
+}
+
+.heading {
+        font-size: 30px;
+        float: left;
+        width: 100%;
+        margin-bottom: 50px;
+}
+
+
+.pythonImage {
+        height: 230px;
+        width: 790px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+.facts-list li{
+    margin: 15px;
+}
+.pageNavigator{
+    position: relative;
+    top: 60px;
+    left: 45%;
+}

@@ -1,0 +1,41 @@
+{% extends 'basic.htm'%}
+{% block title %} Python 3 basics {% endblock %}
+{% block extra_head %}
+{%load static %}
+<link rel="stylesheet" href="{% static 'mysite/css/style2.css'%}">
+{% endblock extra_head%}
+{% block content %}
+<div class="container">
+    <div class="heading">Python 3 basics</div>
+    <p class="description mb-5">Python was developed by Guido van Rossum in the early 1990s and its latest version is
+        3.7.1, we can simply call it as Python3. Python 3.0 was released in 2008. and is interpreted language i.e it’s
+        not compiled and the interpreter will check the code line by line. This article can used to learn very basics of
+        Python programming language.</p>
+    <p class="description mb-5">So before moving on further.. let’s do the most popular ‘HelloWorld’ tradition 😛 and
+        hence compare Python’s Syntax with C, C++, Java ( I have taken these 3 because they are most famous and mostly
+        used languages).</p>
+
+
+    
+    <form method="post">{% csrf_token %}
+        <button type="submit" class="tempCodeControls" id="tempCodeRun"></button>
+        <button class="tempCodeControls" id="tempCodeRun"></button>
+        <button class="tempCodeControls" id="tempCodeRun"></button>
+        <textarea name="tempCode" id="tempCode" cols="30" rows="10" disabled></textarea>
+    </form>
+
+
+</div>
+
+
+
+{% endblock content%}
+{% block pageNavigator%}
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="/downloadAndInstall">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="/python3basics">Next</a></li>
+    </ul>
+</nav>
+
+{% endblock pageNavigator%}
